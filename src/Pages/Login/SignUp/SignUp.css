@@ -1,0 +1,17 @@
+.toggle-link-style a {
+  font-size: 18px;
+  color: red;
+}
+.toggle-link-style a span {
+  background-color: #13c5dd;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  transition: 0.5s;
+
+  margin-left: 10px;
+}
+.toggle-link-style a span:hover {
+  background-color: black;
+}
