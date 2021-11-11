@@ -1,0 +1,65 @@
+.banner-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../../../images/sldierImages/slider1.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.banner-section {
+  padding-top: 50px;
+}
+.banner-text h5 {
+  color: #2ee59d;
+  font-weight: bold;
+}
+.banner-text p {
+  color: rgba(209, 206, 206, 0.883);
+  line-height: 1.6em;
+  padding: 10px 0;
+}
+.button-carousel {
+  text-align: center;
+}
+.button-carousel button {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 5px 25px;
+  transition: 0.5s;
+}
+.button-carousel button:hover {
+  background-color: #2ee59d;
+  color: black;
+  font-weight: bold;
+  border: 1px solid black;
+  letter-spacing: 1.3px;
+  transform: translateY(-5px);
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+}
+.banner-text-button button {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 5px 25px;
+  transition: 0.5s;
+}
+.banner-text-button button:hover {
+  background-color: #2ee59d;
+  font-weight: bold;
+  color: black;
+  border: 1px solid black;
+  letter-spacing: 1.4px;
+  transform: translateY(-5px);
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+}
+.banner-carousel img {
+  width: 300px;
+  height: 300px;
+}
+.carousel-indicators {
+  display: none;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: none;
+}

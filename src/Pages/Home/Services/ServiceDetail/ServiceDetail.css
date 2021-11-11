@@ -1,0 +1,44 @@
+.serviceDetail-card {
+  margin: 20px 0;
+  border: none;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  transition: 0.7s;
+}
+.serviceDetail-card:hover {
+  box-shadow: 0 7px 20px rgb(0 0 0 / 0.6);
+}
+.serviceDetail-card h3 {
+  color: #e95d0c;
+  padding: 10px 0;
+  text-align: center;
+}
+.serviceDetail-card p {
+  color: gray;
+  text-align: justify;
+  line-height: 1.5em;
+}
+.serviceDetail-card span {
+  color: #e95d0c;
+  font-size: 23px;
+  font-weight: bold;
+}
+.service-btn {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.service-btn button {
+  background: none;
+  border: 1px solid black;
+  color: black;
+  padding: 5px 25px;
+  transition: 0.5s;
+}
+.service-btn button:hover {
+  background-color: #1fb393;
+  font-weight: bold;
+  color: black;
+  border: 1px solid white;
+  letter-spacing: 1.4px;
+  transform: translateY(-5px);
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+}

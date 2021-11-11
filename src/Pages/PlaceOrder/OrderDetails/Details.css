@@ -1,0 +1,63 @@
+.service-details-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../../../images/sldierImages/slider1.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.service-details-section {
+  padding-top: 100px;
+}
+
+.service-detail-img img {
+  width: 330px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 5px rgba(165, 161, 161, 0.308);
+}
+.service-detail-img {
+  text-align: center;
+}
+
+.details-info {
+  border: 1px solid rgb(80, 79, 79);
+  padding: 20px;
+  border-radius: 5px;
+}
+.details-info h3 {
+  color: white;
+  padding: 2px 0;
+}
+.details-info p {
+  color: rgb(173, 173, 173);
+  text-align: justify;
+  margin-left: 30px;
+}
+.details-info span {
+  color: #e3f119;
+}
+.order-place-btn {
+  text-align: center;
+  padding: 5px 0;
+}
+.order-place-btn button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 5px 20px;
+  transition: 0.5s;
+}
+.order-place-btn button:hover {
+  background-color: #1fb393;
+  font-weight: bold;
+  color: white;
+
+  letter-spacing: 1.4px;
+  transform: translateY(-5px);
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+}
+@media only screen and (max-width: 600px) {
+  .image-section img {
+    width: 100%;
+  }
+}

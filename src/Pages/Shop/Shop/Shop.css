@@ -1,0 +1,22 @@
+.shop-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../../../images/sldierImages/slider2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 80px;
+}
+.shop-header {
+  padding: 40px 0;
+  text-align: center;
+}
+.shop-header h1 {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 50px;
+}
+.shop-header h4 {
+  color: orangered;
+  font-weight: bold;
+}

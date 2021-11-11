@@ -1,0 +1,36 @@
+.works-header {
+  text-align: center;
+  padding: 50px 0;
+}
+.works-header h1 {
+  font-size: 70px;
+  color: black;
+  font-weight: 700;
+}
+.works-main {
+  padding: 30px 0;
+}
+.works-card-icon {
+  color: rgba(255, 68, 0, 0.794);
+  font-size: 45px;
+  text-align: center;
+  margin: 20px 0;
+}
+.works-card {
+  width: 350px;
+  height: 300px;
+  margin: 10px 0;
+  border: none;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.works-card h4 {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+.works-card p {
+  text-align: justify;
+  color: rgb(98, 94, 94);
+  line-height: 1.5em;
+  padding: 10px 0;
+}

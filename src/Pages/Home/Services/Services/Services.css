@@ -1,0 +1,20 @@
+.services-section {
+  padding-top: 100px;
+}
+.services-header {
+  padding: 40px 0;
+  text-align: center;
+}
+.services-header h1 {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.services-header h4 {
+  color: maroon;
+  font-weight: bold;
+}
+.services-header hr {
+  width: 13%;
+  height: 4px;
+  margin: auto;
+}

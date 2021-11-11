@@ -1,0 +1,35 @@
+.add-section {
+  padding: 60px 0;
+}
+.add-service-form form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+.add-service-form form input {
+  margin-bottom: 10px;
+  border-radius: 4px;
+  padding: 7px;
+  border: 1px solid rgb(211, 209, 209);
+}
+.add-service-form h2 {
+  text-align: center;
+  color: maroon;
+  letter-spacing: 3px;
+  padding-bottom: 20px;
+}
+.add-sub-button {
+  text-align: center;
+}
+.add-sub-button input {
+  background-color: #0ebcd3;
+  color: white;
+  margin-top: 10px;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+.add-sub-button input:hover {
+  background-color: black;
+  color: white;
+}

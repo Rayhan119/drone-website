@@ -1,0 +1,90 @@
+.footer-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../../../images/sldierImages/slider2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+.social-link ul {
+  padding: 0;
+  margin: 0;
+}
+.social-link ul li {
+  list-style: none;
+  margin: 6px 0;
+}
+.social-link span {
+  color: #d9e52e;
+  font-size: 20px;
+  margin-left: 30px;
+  transition: 0.4s;
+}
+.social-link span:hover {
+  color: blue;
+}
+.social-link i {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: blue;
+  text-align: center;
+  padding-top: 7px;
+  color: white;
+  transition: 0.5s;
+}
+.social-link i:hover {
+  background: #d9e52e;
+  color: black;
+}
+.footer-section-left {
+  border: 1px solid rgba(48, 47, 47, 0.794);
+  color: white;
+  padding: 20px;
+}
+.footer-about-section {
+  line-height: 1.6em;
+  text-align: justify;
+  color: rgb(185, 177, 177);
+}
+.follow-us-section {
+  border: 1px solid rgba(48, 47, 47, 0.794);
+  padding: 20px;
+}
+.subscribe-section {
+  border: 1px solid rgba(48, 47, 47, 0.794);
+  padding: 35px;
+}
+.subscribe-text p {
+  line-height: 1.6em;
+  color: rgb(185, 177, 177);
+}
+.subscribe-input input,
+.subscribe-input button {
+  width: 90%;
+  padding: 5px;
+  background: none;
+  border: 1px solid white;
+  margin: 5px 0;
+}
+.subscribe-input {
+  text-align: center;
+}
+.footer-btn button {
+  background: none;
+  border: 1px solid rgb(3, 170, 142);
+  color: white;
+  padding: 5px 25px;
+  transition: 0.5s;
+}
+.footer-btn button:hover {
+  background-color: #2ee59d;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 1.3px;
+  transform: translateY(-5px);
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+}
+.copyrygiht-section {
+  margin-top: 40px;
+}

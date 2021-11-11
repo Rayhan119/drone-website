@@ -63,7 +63,7 @@ const Login = () => {
                 </div>
               </Form>
               <p className="mt-2 text-center toggle-link-style">
-                <NavLink className="text-decoration-none" to="/signup">
+                <NavLink className="text-decoration-none" to="/signUp">
                   Don't You Sign Up?
                   <span>Please Sign Up</span>
                 </NavLink>
