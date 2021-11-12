@@ -29,6 +29,11 @@ const MyOrderDetail = ({ order }) => {
           </tr>
         </tbody>
       </Table>
+      <div className="myOrder-btn">
+        <button>
+          <i class="fas fa-trash"></i>delete
+        </button>
+      </div>
     </div>
   );
 };

@@ -35,7 +35,7 @@ const OrderModal = ({ show, handleClose, data }) => {
       productName: name,
       userEmail: users.email,
     };
-    console.log(orders);
+
     //post order to the server
 
     fetch("http://localhost:5000/orders", {

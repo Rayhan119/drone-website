@@ -9,6 +9,7 @@ const ManageOrder = () => {
       .then((data) => setManageOrder(data));
   }, []);
   console.log(manageOrder);
+
   return (
     <div>
       {manageOrder.map((manageAllOrder) => (

@@ -28,7 +28,7 @@ import Review from "../Reviews/Review";
 
 const Dashboard = () => {
   let { path, url } = useRouteMatch();
-  const { admin } = useAuth();
+  const { admin, handleGoogleSignOut } = useAuth();
   return (
     <div className="dashboard">
       <Col sm={12} md={3} className="sidebar">
@@ -58,6 +58,11 @@ const Dashboard = () => {
             <li>
               <Link to={`${url}/review`}>
                 <i class="fas fa-comments"></i>Review
+              </Link>
+            </li>
+            <li>
+              <Link onClick={handleGoogleSignOut} to={`/home`}>
+                <i class="fas fa-sign-out-alt"></i>Log out
               </Link>
             </li>
             {admin && (

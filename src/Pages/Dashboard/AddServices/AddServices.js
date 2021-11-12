@@ -13,8 +13,6 @@ const AddServices = () => {
   //react form
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
-    console.log(data);
-
     axios.post("http://localhost:5000/services", data).then((res) => {
       if (res.data.insertedId) {
         swal("Good job!", "You Successfully added the service", "success");

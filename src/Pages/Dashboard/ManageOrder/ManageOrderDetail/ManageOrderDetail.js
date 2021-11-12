@@ -12,6 +12,7 @@ const ManageOrderDetail = ({ manageAllOrder }) => {
     _id,
     phone,
   } = manageAllOrder;
+
   return (
     <div>
       <Table striped bordered hover className="table-order">

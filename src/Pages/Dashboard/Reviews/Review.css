@@ -1,0 +1,32 @@
+.review-section-header h2 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  padding: 30px 0 20px 0;
+}
+.review-form {
+  border: 1px solid white;
+  padding: 40px;
+  text-align: center;
+}
+.review-form form input {
+  background-color: transparent;
+  width: 60%;
+  margin: 10px 0;
+  padding: 5px 10px;
+  color: white;
+  border: 1px solid white;
+}
+.review-form form input:nth-child(3) {
+  padding: 50px 10px;
+}
+.review-form .review-btn input {
+  width: 20%;
+  margin: auto;
+  transition: 0.5s;
+}
+.review-form .review-btn input:hover {
+  background-color: #ff0055;
+}
