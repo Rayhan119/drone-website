@@ -8,3 +8,20 @@
 .modal-submit-btn button {
   padding: 8px 30px;
 }
+
+.modal-header img {
+  width: 100px;
+  height: 50px;
+}
+.modal-header h5 {
+  color: rgb(255, 0, 85);
+  margin-left: 5px;
+}
+.modal-submit-btn button {
+  background-color: rgb(255, 0, 85);
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 5px 30px;
+  transition: 0.5s;
+}
