@@ -1,0 +1,8 @@
+.dashboard-home-header h1 {
+  color: white;
+  padding-top: 150px;
+}
+.dashboard-home-header span {
+  color: orangered;
+  font-size: 40px;
+}

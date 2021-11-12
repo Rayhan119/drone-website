@@ -27,27 +27,6 @@ const Details = () => {
   const onSubmit = (data) => {
     console.log(data);
   };
-  //   const onSubmit = (data) => {
-  //     console.log({ ...data, ...rest });
-  //     axios
-  //       .post("https://macabre-vampire-16752.herokuapp.com/users", {
-  //         ...data,
-  //         ...rest,
-  //       })
-
-  //       .then((res) => {
-  //         if (res.data.insertedId) {
-  //           Swal.fire(
-  //             "Good job!",
-  //             "You Successfully Booked your Place",
-  //             "success"
-  //           );
-
-  //           history.push(redirect);
-  //           reset();
-  //         }
-  //       });
-  //   };
 
   useEffect(() => {
     fetch(`http://localhost:5000/services/${id}`)

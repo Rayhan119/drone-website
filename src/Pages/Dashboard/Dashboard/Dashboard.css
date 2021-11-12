@@ -1,0 +1,59 @@
+.dashboard {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../../../images//sldierImages/slider2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sidebar {
+  width: 300px;
+  box-shadow: 0 3px 10px rgba(59, 59, 59, 0.408);
+  background-color: #0e0e0e;
+}
+.sidebar-link {
+  margin: auto;
+}
+.sidebar-link i {
+  margin-right: 10px;
+  color: rgb(245, 188, 0);
+}
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  transition: 0.5s;
+}
+.sidebar a:hover {
+  color: rgb(245, 188, 0);
+}
+.sidebar-link ul {
+  margin: auto;
+}
+.sidebar-link li {
+  list-style: none;
+  padding: 5px 0;
+}
+.sidebar-heading {
+  text-align: center;
+  padding: 20px 0;
+}
+.sidebar-heading h2 {
+  color: white;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+.sidebar-heading img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .dashboard {
+    display: block;
+    text-align: center;
+  }
+}

@@ -56,6 +56,7 @@ const useFirebase = () => {
   };
   //sign up Email and password
   const signUpEmailPassword = (e) => {
+    saveUser(email, name);
     return createUserWithEmailAndPassword(auth, email, password);
   };
   //sign In email and password
@@ -87,7 +88,18 @@ const useFirebase = () => {
         setError(error.message);
       });
   };
-
+  const saveUser = (email, displayName) => {
+    const user = { email, displayName };
+    fetch("http://localhost:5000/users", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(user),
+    })
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+  };
   return {
     getEmail,
     getPassword,

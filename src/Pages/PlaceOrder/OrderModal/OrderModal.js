@@ -28,15 +28,12 @@ const OrderModal = ({ show, handleClose, data }) => {
   };
   const handleModalSubmit = (e) => {
     e.preventDefault();
-    // swal("Good job!", "You Successfully Order your Drone", "success");
-    //swal("Good job!", "You Successfully Order your Drone", "success");
-
-    // history.push(redirect);
     //order
     const orders = {
       ...oderInfo,
       productImg: img,
       productName: name,
+      userEmail: users.email,
     };
     console.log(orders);
     //post order to the server

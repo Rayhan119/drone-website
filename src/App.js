@@ -4,6 +4,7 @@ import "./App.css";
 import AuthProvider from "./Context/AuthProvider";
 import PrivateRoute from "./Context/PrivateRoute/PrivateRoute";
 import Contact from "./Pages/ContactUs/Contact";
+import MakeAdmin from "./Pages/Dashboard/Dashboard/Admin/MakeAdmin";
 import Dashboard from "./Pages/Dashboard/Dashboard/Dashboard";
 import AboutUs from "./Pages/Home/AboutUs/AboutUs";
 import Home from "./Pages/Home/Home/Home";
@@ -39,7 +40,7 @@ function App() {
           <PrivateRoute exact path="/shop/:id">
             <Details></Details>
           </PrivateRoute>
-          <PrivateRoute exact path="/dashboard">
+          <PrivateRoute path="/dashboard">
             <Dashboard></Dashboard>
           </PrivateRoute>
           <Route exact path="/login">

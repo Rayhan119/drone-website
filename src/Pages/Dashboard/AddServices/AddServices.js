@@ -29,20 +29,20 @@ const AddServices = () => {
       <Container className="add-section">
         <Row>
           <Col>
-            <div className="add-service-form shadow p-5 mb-5  rounded">
+            <div className="add-service-form">
               <h2>Add a Service!!</h2>
               <form onSubmit={handleSubmit(onSubmit)}>
                 <input
-                  placeholder="Image URL of the place"
+                  placeholder="Image URL of the Product"
                   {...register("img")}
                 />
                 <input placeholder="Name Your Place" {...register("name")} />
                 <input
-                  placeholder="Description of the Place"
+                  placeholder="Description of the Product"
                   {...register("description")}
                 />
                 <input
-                  placeholder="Price Range avobe 1000$"
+                  placeholder="Price Of the Product"
                   {...register("price")}
                 />
 

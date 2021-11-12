@@ -1,35 +1,53 @@
 .add-section {
   padding: 60px 0;
 }
+.add-service-form {
+  /* background-color: #0e0e0d; */
+  background-color: none;
+  border: 1px solid white;
+  padding: 20px 30px;
+}
 .add-service-form form {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 80%;
   margin: auto;
 }
 .add-service-form form input {
   margin-bottom: 10px;
   border-radius: 4px;
   padding: 7px;
+  background-color: rgb(14, 14, 14);
+
   border: 1px solid rgb(211, 209, 209);
+  color: white;
 }
 .add-service-form h2 {
   text-align: center;
-  color: maroon;
-  letter-spacing: 3px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 4px;
   padding-bottom: 20px;
 }
 .add-sub-button {
   text-align: center;
 }
 .add-sub-button input {
-  background-color: #0ebcd3;
-  color: white;
+  background-color: none;
+  color: black;
   margin-top: 10px;
   letter-spacing: 2px;
   transition: 0.6s;
+  border: 1px solid white;
 }
 .add-sub-button input:hover {
-  background-color: black;
-  color: white;
+  background-color: #2de099;
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .dashboard {
+    display: block;
+    text-align: center;
+  }
 }
