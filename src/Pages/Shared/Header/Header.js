@@ -32,7 +32,7 @@ const Header = () => {
                     Log out
                   </Link>
                   <h4 className="text-warning text-center">
-                    {users.displayName}
+                    {users?.displayName}
                   </h4>
                 </>
               ) : (

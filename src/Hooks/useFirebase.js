@@ -25,9 +25,11 @@ const useFirebase = () => {
   const [image, setImage] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(true);
+  const [admin, setAdmin] = useState(false);
   //google sign in
   const handleGoogleSignIn = () => {
     const googleProvider = new GoogleAuthProvider();
+
     return signInWithPopup(auth, googleProvider);
   };
   //google sign out
@@ -63,7 +65,7 @@ const useFirebase = () => {
   const signInEmailPassword = (e) => {
     return signInWithEmailAndPassword(auth, email, password);
   };
-  console.log(email, password);
+
   //Emali and Password and photo url
   const getEmail = (e) => {
     setEmail(e?.target?.value);
@@ -100,6 +102,11 @@ const useFirebase = () => {
       .then((res) => res.json())
       .then((data) => console.log(data));
   };
+  useEffect(() => {
+    fetch(`http://localhost:5000/users/${users.email}`)
+      .then((res) => res.json())
+      .then((data) => setAdmin(data.admin));
+  }, [users.email]);
   return {
     getEmail,
     getPassword,
@@ -117,6 +124,7 @@ const useFirebase = () => {
     setLoading,
     formSubmit,
     updateNameAndImage,
+    admin,
   };
 };
 

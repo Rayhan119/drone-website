@@ -1,0 +1,15 @@
+.payment-img {
+  padding-top: 10px;
+  text-align: center;
+}
+.payment-header h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+.payment-header h3 {
+  color: #e78d0b;
+  letter-spacing: 2px;
+  text-align: center;
+}

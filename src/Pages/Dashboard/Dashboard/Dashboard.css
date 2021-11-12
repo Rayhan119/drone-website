@@ -1,5 +1,5 @@
 .dashboard {
-  height: 100vh;
+  height: 100%;
   display: grid;
   grid-template-columns: 30% 70%;
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
@@ -10,6 +10,7 @@
 }
 .sidebar {
   width: 300px;
+  height: 600px;
   box-shadow: 0 3px 10px rgba(59, 59, 59, 0.408);
   background-color: #0e0e0e;
 }

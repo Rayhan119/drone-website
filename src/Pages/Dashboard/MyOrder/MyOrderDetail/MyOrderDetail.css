@@ -1,0 +1,22 @@
+.table-order {
+  background-color: transparent;
+  color: white;
+}
+.order-img {
+  text-align: center;
+  padding: 10px 0;
+}
+.table-order img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.table-order h6 {
+  color: white;
+  padding: 5px 0;
+}
+.table-head > th {
+  color: #f5bc00;
+  font-size: 22px;
+  text-align: center;
+}

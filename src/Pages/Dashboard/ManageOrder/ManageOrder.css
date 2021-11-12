@@ -1,0 +1,22 @@
+.manageOrder-btn {
+  text-align: center;
+  padding: 0 0 15px 0;
+}
+.manageOrder-btn button {
+  background-color: rgb(192, 16, 16);
+  color: white;
+  padding: 5px 20px;
+  border: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.4s;
+}
+
+.manageOrder-btn button:hover {
+  background-color: forestgreen;
+}
+.manageOrder-btn i {
+  color: white;
+  margin-right: 5px;
+}

@@ -1,0 +1,33 @@
+.make-admin {
+  background-color: transparent;
+  margin-top: 40px;
+  padding: 50px 0;
+}
+.admin-header h1 {
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  letter-spacing: 3px;
+  font-size: 50px;
+  font-weight: bold;
+}
+.make-admin form input {
+  background-color: transparent;
+  color: white;
+  padding: 5px 5px;
+  border: 1px solid white;
+  width: 60%;
+}
+.make-admin form button {
+  background-color: transparent;
+  color: white;
+  padding: 5px 10px;
+  border: 1px solid white;
+  margin-left: 5px;
+}
+.make-admin form button:hover {
+  background-color: rgb(255, 0, 85);
+  color: white;
+  border: 1px solid transparent;
+  transition: 0.5s;
+}

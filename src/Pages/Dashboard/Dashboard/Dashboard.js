@@ -23,9 +23,12 @@ import MyOrder from "../MyOrder/MyOrder";
 import ManageOrder from "../ManageOrder/ManageOrder";
 import Payment from "../Payments/Payment";
 import sidebarImg from "../../../images/droneImages/drone-1.jpg";
+import useAuth from "../../../Hooks/useAuth";
+import Review from "../Reviews/Review";
 
 const Dashboard = () => {
   let { path, url } = useRouteMatch();
+  const { admin } = useAuth();
   return (
     <div className="dashboard">
       <Col sm={12} md={3} className="sidebar">
@@ -41,16 +44,7 @@ const Dashboard = () => {
                 <i class="fas fa-home"></i>Dashboard
               </Link>
             </li>
-            <li>
-              <Link to={`${url}/addService`}>
-                <i class="fas fa-plus-square"></i>add service
-              </Link>
-            </li>
-            <li>
-              <Link to={`${url}/makeAdmin`}>
-                <i class="fas fa-users-cog"></i>make admin
-              </Link>
-            </li>
+
             <li>
               <Link to={`${url}/payment`}>
                 <i class="fas fa-money-check-alt"></i>Payment
@@ -62,10 +56,29 @@ const Dashboard = () => {
               </Link>
             </li>
             <li>
-              <Link to={`${url}/manageOrder`}>
-                <i class="fas fa-cart-plus"></i>Manage Order
+              <Link to={`${url}/review`}>
+                <i class="fas fa-comments"></i>Review
               </Link>
             </li>
+            {admin && (
+              <>
+                <li>
+                  <Link to={`${url}/addService`}>
+                    <i class="fas fa-plus-square"></i>add service
+                  </Link>
+                </li>
+                <li>
+                  <Link to={`${url}/makeAdmin`}>
+                    <i class="fas fa-users-cog"></i>make admin
+                  </Link>
+                </li>
+                <li>
+                  <Link to={`${url}/manageOrder`}>
+                    <i class="fas fa-cart-plus"></i>Manage Order
+                  </Link>
+                </li>
+              </>
+            )}
           </ul>
         </Nav>
       </Col>
@@ -76,6 +89,9 @@ const Dashboard = () => {
           </Route>
           <Route exact path={`${path}/addservice`}>
             <AddServices></AddServices>
+          </Route>
+          <Route exact path={`${path}/review`}>
+            <Review></Review>
           </Route>
           <Route exact path={`${path}/makeAdmin`}>
             <MakeAdmin></MakeAdmin>
