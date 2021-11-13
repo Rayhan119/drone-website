@@ -11,13 +11,15 @@ const Review = () => {
   const redirect = "/home";
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
-    axios.post("http://localhost:5000/reviews", data).then((res) => {
-      if (res.data.insertedId) {
-        swal("Good job!", "Thank You very much for Your Review", "success");
-        history.push(redirect);
-        reset();
-      }
-    });
+    axios
+      .post("https://blooming-chamber-22086.herokuapp.com/reviews", data)
+      .then((res) => {
+        if (res.data.insertedId) {
+          swal("Good job!", "Thank You very much for Your Review", "success");
+          history.push(redirect);
+          reset();
+        }
+      });
   };
   return (
     <div className="review-section">

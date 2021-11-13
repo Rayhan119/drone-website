@@ -5,7 +5,7 @@ const ManageProducts = () => {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/services")
+    fetch("https://blooming-chamber-22086.herokuapp.com/services")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
@@ -13,7 +13,7 @@ const ManageProducts = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are You sure want to delete?");
     if (proceed) {
-      const url = `http://localhost:5000/services/${id}`;
+      const url = `https://blooming-chamber-22086.herokuapp.com/services/${id}`;
       fetch(url, {
         method: "DELETE",
       })

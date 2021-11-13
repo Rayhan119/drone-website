@@ -13,14 +13,16 @@ const AddServices = () => {
   //react form
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
-    axios.post("http://localhost:5000/services", data).then((res) => {
-      if (res.data.insertedId) {
-        swal("Good job!", "You Successfully added the service", "success");
+    axios
+      .post("https://blooming-chamber-22086.herokuapp.com/services", data)
+      .then((res) => {
+        if (res.data.insertedId) {
+          swal("Good job!", "You Successfully added the service", "success");
 
-        history.push(redirect);
-        reset();
-      }
-    });
+          history.push(redirect);
+          reset();
+        }
+      });
   };
   return (
     <div>

@@ -4,7 +4,7 @@ import "./ManageOrder.css";
 const ManageOrder = () => {
   const [manageOrders, setManageOrders] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/orders")
+    fetch("https://blooming-chamber-22086.herokuapp.com/orders")
       .then((res) => res.json())
       .then((data) => setManageOrders(data));
   }, []);
@@ -13,7 +13,7 @@ const ManageOrder = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are You sure want to delete?");
     if (proceed) {
-      const url = `http://localhost:5000/orders/${id}`;
+      const url = `https://blooming-chamber-22086.herokuapp.com/orders/${id}`;
       fetch(url, {
         method: "DELETE",
       })
@@ -32,7 +32,7 @@ const ManageOrder = () => {
   const [status, setStatus] = useState(false);
   console.log(status);
   const handleUpdate = (id) => {
-    fetch(`http://localhost:5000/updateStatus/${id}`, {
+    fetch(`https://blooming-chamber-22086.herokuapp.com/updateStatus/${id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

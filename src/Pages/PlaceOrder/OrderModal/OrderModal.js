@@ -39,7 +39,7 @@ const OrderModal = ({ show, handleClose, data }) => {
 
     //post order to the server
 
-    fetch("http://localhost:5000/orders", {
+    fetch("https://blooming-chamber-22086.herokuapp.com/orders", {
       method: "POST",
       headers: {
         "content-type": "application/json",

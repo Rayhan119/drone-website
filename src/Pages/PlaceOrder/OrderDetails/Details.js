@@ -29,7 +29,7 @@ const Details = () => {
   };
 
   useEffect(() => {
-    fetch(`http://localhost:5000/services/${id}`)
+    fetch(`https://blooming-chamber-22086.herokuapp.com/services/${id}`)
       .then((res) => res.json())
       .then((data) => setData(data));
   }, []);
