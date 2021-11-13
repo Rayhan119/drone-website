@@ -20,3 +20,27 @@
   color: white;
   margin-right: 5px;
 }
+.table-manageOrder h6 {
+  color: white;
+}
+.table-manageOrder-head {
+  color: #f5bc00;
+  text-align: center;
+  font-size: 20px;
+}
+.manageOrder-img {
+  text-align: center;
+  padding: 5px 0;
+}
+.manageOrder-img img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 600px) {
+  .manageOrder-img img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+}

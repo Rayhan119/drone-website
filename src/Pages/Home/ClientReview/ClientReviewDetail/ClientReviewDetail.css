@@ -1,0 +1,36 @@
+.reviews-card {
+  width: 350px;
+  min-height: 350px;
+  margin: 10px 0;
+  border: none;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  color: rgb(0, 0, 0);
+}
+.reviews-card h6 {
+  color: rgba(0, 0, 0, 0.794);
+  font-weight: bold;
+  text-align: center;
+  margin: 5px 0;
+}
+.reviews-card p {
+  text-align: justify;
+  color: rgb(98, 94, 94);
+  line-height: 1.5em;
+  padding: 10px 0;
+}
+.reviewer-img {
+  text-align: center;
+  margin: 0px 0px 10px 0;
+}
+.reviews-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.reviews-card i {
+  color: orange;
+  font-size: 18px;
+}
+.left-quota {
+  text-align: right;
+}

@@ -54,7 +54,38 @@
 
 @media only screen and (max-width: 600px) {
   .dashboard {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     text-align: center;
+  }
+  .sidebar {
+    height: 600px;
+  }
+
+  .sidebar-heading img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  .sidebar a {
+    font-size: 18px;
+  }
+
+  .sidebar-link ul {
+    margin: left;
+  }
+
+  .sidebar-link i {
+    margin-right: 0;
+  }
+
+  .sidebar-heading {
+    text-align: center;
+    padding: 20px 0;
+  }
+  .sidebar-heading h2 {
+    color: white;
+    font-weight: bold;
   }
 }
