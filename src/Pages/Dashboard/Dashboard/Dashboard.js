@@ -25,6 +25,7 @@ import Payment from "../Payments/Payment";
 import sidebarImg from "../../../images/droneImages/drone-1.jpg";
 import useAuth from "../../../Hooks/useAuth";
 import Review from "../Reviews/Review";
+import ManageProducts from "../ManageProducts/ManageProducts";
 
 const Dashboard = () => {
   let { path, url } = useRouteMatch();
@@ -82,6 +83,11 @@ const Dashboard = () => {
                     <i class="fas fa-cart-plus"></i>Manage Order
                   </Link>
                 </li>
+                <li>
+                  <Link to={`${url}/manageProducts`}>
+                    <i class="fas fa-cart-plus"></i>Manage Products
+                  </Link>
+                </li>
               </>
             )}
           </ul>
@@ -100,6 +106,9 @@ const Dashboard = () => {
           </Route>
           <Route exact path={`${path}/makeAdmin`}>
             <MakeAdmin></MakeAdmin>
+          </Route>
+          <Route exact path={`${path}/manageProducts`}>
+            <ManageProducts></ManageProducts>
           </Route>
           <Route exact path={`${path}/myOrder`}>
             <MyOrder></MyOrder>

@@ -27,9 +27,20 @@ const Review = () => {
       <Container>
         <Row className="review-form">
           <form onSubmit={handleSubmit(onSubmit)}>
-            <input required placeholder="Image Url" {...register("img")} />
-            <input required placeholder="email" {...register("email")} />
+            <input
+              required
+              placeholder="Give YOur Image Url"
+              {...register("img")}
+            />
+            <input required placeholder="Your email" {...register("email")} />
             <input required placeholder="Your name" {...register("name")} />
+            <input
+              required
+              type="number "
+              step="any"
+              placeholder="Give Rating Out of 5"
+              {...register("rating")}
+            />
             <input
               required
               placeholder="Give Comments!!"

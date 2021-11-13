@@ -29,9 +29,26 @@ const ManageOrder = () => {
         });
     }
   };
-
+  const [status, setStatus] = useState(false);
+  console.log(status);
+  const handleUpdate = (id) => {
+    fetch(`http://localhost:5000/updateStatus/${id}`, {
+      method: "PUT",
+      headers: {
+        "content-type": "application/json",
+      },
+    }).then((res) => {
+      if (res.status == 200) {
+        alert("approved successfully");
+        setStatus(true);
+      }
+    });
+  };
   return (
     <div>
+      <div className="manage-order-top">
+        <h1>Total Products : {manageOrders.length}</h1>
+      </div>
       {manageOrders.map((manageOrder) => (
         <div>
           <div>
@@ -45,7 +62,8 @@ const ManageOrder = () => {
               <thead>
                 <tr className="table-manageOrder-head">
                   <th>Product Details</th>
-                  <th>Users Details</th>{" "}
+                  <th>Users Details</th>
+                  <th>Order Status</th>
                 </tr>
               </thead>
 
@@ -64,18 +82,39 @@ const ManageOrder = () => {
                     <h6>Customer Email : {manageOrder.email} </h6>
                     <h6>Customer Phone : {manageOrder.phone} </h6>{" "}
                   </td>
+
+                  <td>
+                    {status === false ? (
+                      <>
+                        <h2>Pending</h2>
+                      </>
+                    ) : (
+                      <h2>Shiped</h2>
+                    )}
+                  </td>
                 </tr>
               </tbody>
             </Table>
 
-            <div className="manageOrder-btn">
-              <button
-                onClick={() => {
-                  handleDelete(manageOrder._id);
-                }}
-              >
-                <i class="fas fa-trash"></i>delete
-              </button>
+            <div className="mangeOrder-handle-btn">
+              <div className="manageOrder-btn">
+                <button
+                  onClick={() => {
+                    handleDelete(manageOrder._id);
+                  }}
+                >
+                  <i class="fas fa-trash"></i>delete
+                </button>
+              </div>
+              <div className="update-btn">
+                <button
+                  onClick={() => {
+                    handleUpdate(manageOrder._id);
+                  }}
+                >
+                  <i class="fas fa-sync"></i>update
+                </button>
+              </div>
             </div>
           </div>
         </div>

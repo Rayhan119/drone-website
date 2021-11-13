@@ -34,6 +34,7 @@ const OrderModal = ({ show, handleClose, data }) => {
       productImg: img,
       productName: name,
       userEmail: users.email,
+      status: "pending",
     };
 
     //post order to the server

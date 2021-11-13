@@ -16,8 +16,12 @@ const ClientReviewDetail = ({ review }) => {
               <img src={review.img} alt="" />
             </div>
             <h6>{review.name}</h6>
-
             <h6>{review.email}</h6>
+            <h6>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>Rating : {review.rating}/5
+            </h6>
           </Card.Text>
         </Card.Body>
       </Card>
